@@ -376,9 +376,6 @@ button{
 .blocsapp-device-watch.watch-white{
 	background-image:url("img/Apple-watch-white.png");
 }
-.blocsapp-device-watch.watch-blue{
-	background-image:url("img/Apple-watch-blue.png");
-}
 
 /* = Custom Styling
 -------------------------------------------------------------- */
@@ -436,7 +433,7 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	background-color:#333433;
 }
 .bgc-white{
-	background-color:#ffffff;
+	background-color:#FEFFFF;
 }
 
 /* Bloc image backgrounds */
@@ -670,5 +667,8 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	.hero-text-vc{
 	margin-top:0px;
 }
- }
+ #bloc-0 .navbar-brand{
+	font-size: 18px;
+}
+}
 

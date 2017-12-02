@@ -30,7 +30,7 @@
 <div class="page-container">
     
 <!-- bloc-0 -->
-<div class="bloc bgc-olive-drab-7 d-bloc sticky-nav" id="bloc-0">
+<div class="bloc bgc-olive-drab-7 sticky-nav d-bloc" id="bloc-0">
 	<div class="container">
 		<nav class="navbar row">
 			<div class="navbar-header">
@@ -39,10 +39,13 @@
 					<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 				</button>
 			</div>
-			<div class="collapse navbar-collapse navbar-1">
+			<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
 				<ul class="site-navigation nav navbar-nav">
 					<li>
 						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a id="pl-undefined" onclick="scrollToTarget('#applewatch')">Apple Watch</a>
 					</li>
 				</ul>
 			</div>
@@ -57,17 +60,17 @@
 
 
 <!-- Footer - bloc-1 -->
-<div class="bloc bgc-white l-bloc" id="bloc-1">
+<div class="bloc bgc-white none l-bloc " id="bloc-1">
 	<div class="container bloc-lg">
 		<div class="row">
 			<div class="col-sm-6">
-				<h2 class="imac-bloc-text-vc mg-md ">
+				<h2 class="imac-bloc-text-vc mg-md text-center">
 					Interval training at its best with <strong>Intervals.</strong><br>
 				</h2>
-				<h2 class="mg-md animated fadeIn">
+				<h2 class="mg-md animated fadeIn text-center">
 					HIIT, Tabata, Interval Running, Circuit Training, Boxing and more...
-				</h2>
-				<div class="center-block blocsapp-device blocsapp-device-watch watch-blue">
+				</h2><a href="https://itunes.apple.com/app/id957586938" target="_blank"><img src="img/lazyload-ph.png" data-src="img/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" class="img-responsive center-block lazyload" height="60" width="179" /></a>
+				<div class="blocsapp-device center-block blocsapp-device-watch watch-white">
 					<img src="img/lazyload-ph.png" data-src="img/watch-screen.png" class="img-responsive lazyload" />
 				</div>
 			</div>
@@ -81,8 +84,8 @@
 </div>
 <!-- Footer - bloc-1 END -->
 
-<!-- Footer - bloc-2 -->
-<div class="bloc bgc-white l-bloc" id="bloc-2">
+<!-- Footer - applewatch -->
+<div class="bloc bgc-white l-bloc" id="applewatch">
 	<div class="container bloc-lg">
 		<div class="row">
 			<div class="col-sm-6">
@@ -98,7 +101,7 @@
 		</div>
 	</div>
 </div>
-<!-- Footer - bloc-2 END -->
+<!-- Footer - applewatch END -->
 
 <!-- Footer - bloc-3 -->
 <div class="bloc bgc-white l-bloc" id="bloc-3">
