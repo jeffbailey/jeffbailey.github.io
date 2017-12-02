@@ -124,6 +124,9 @@ a:hover{text-decoration: none; cursor:pointer;}
 
 /* Bloc text custom styling */
 
+#bloc-0 .navbar-brand{
+	font-size: 36px;
+}
 
 /* = NavBar
 -------------------------------------------------------------- */
@@ -252,6 +255,16 @@ nav .caret{
 	margin: 6px -5px 0 0!important;
 	float: right;
 }
+/* = Sticky Nav
+-------------------------------------------------------------- */
+
+.sticky-nav.sticky{
+	position:fixed;
+	top:0;
+	z-index:1000;
+	box-shadow:0 1px 2px rgba(0,0,0,.3);
+	 transition: all .2s ease-out;
+}
 
 /* = Bric adjustment margins
 -------------------------------------------------------------- */
@@ -284,21 +297,6 @@ button{
 	outline: none!important;
 }
 
-.a-btn{
-	padding: 6px 10px 6px 0;
-	line-height: 1.42857143;
-	display:inline-block;
-}
-.text-center .a-btn{
-	padding: 6px 0;
-}
-.a-block{
-	width:100%;
-	text-align:left;
-}
-.text-center .a-block{
-	text-align:center;
-}
 
 
 
@@ -375,6 +373,9 @@ button{
 	height: 198px;
 	margin: 0 auto;
 }
+.blocsapp-device-watch.watch-white{
+	background-image:url("img/Apple-watch-white.png");
+}
 .blocsapp-device-watch.watch-blue{
 	background-image:url("img/Apple-watch-blue.png");
 }
@@ -383,7 +384,7 @@ button{
 -------------------------------------------------------------- */
 
 h1,h2,h3,h4,h5,h6,p,label,.btn,a{
-	font-family:"Lato";
+	font-family:"Roboto";
 	font-weight:400;
 }
 .container{
@@ -421,6 +422,10 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	font-size:50px;
 	margin-top:5%;
 }
+.device-bloc-text-vc{
+	font-size:50px;
+	margin-top:50%;
+}
 
 /* = Colour
 -------------------------------------------------------------- */
@@ -435,6 +440,7 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 
 /* Bloc image backgrounds */
+
 
 
 
@@ -467,8 +473,9 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
     .container{width:100%;}
     .b-parallax{background-attachment:scroll;}
     .page-container, #hero-bloc{overflow-x: hidden;position: relative;} /* Prevent unwanted side scroll on mobile */
+    .bloc{padding-left: constant(safe-area-inset-left);padding-right: constant(safe-area-inset-right);} /* iPhone X Notch Support*/
     .bloc-group, .bloc-group .bloc{display:block;width:100%;}
-    .bloc-tile-2 .container, .bloc-tile-3 .container, .bloc-tile-4 .container{padding-left: 10px;padding-right: 10px;}
+    .bloc-fill-screen .fill-bloc-top-edge, .bloc-fill-screen .fill-bloc-bottom-edge{padding:0 20px;padding-left: constant(safe-area-inset-left);padding-right: constant(safe-area-inset-right);}
 }
 @media (max-width: 767px)
 {
@@ -556,6 +563,7 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
     }
     .nav-invert .navbar-toggle{
         float:left; 
+        margin-left:10px;
     }
     .bloc{
         padding-left: 0; 
@@ -568,7 +576,7 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
         padding-left: 0; 
         padding-right: 0;
     }
-    .bloc-tile-2 .container, .bloc-tile-3 .container, .bloc-tile-4 .container{
+    .bloc-tile-2 .container, .bloc-tile-3 .container, .bloc-tile-4 .container, .bloc-fill-screen .fill-bloc-top-edge, .bloc-fill-screen .fill-bloc-bottom-edge{
         padding-left:0;padding-right:0;
     }
     .a-block{
