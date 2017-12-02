@@ -35,51 +35,62 @@ a:hover{text-decoration: none; cursor:pointer;}
 	padding-right:0;
 }
 
-/* = Full Screen Blocs 
--------------------------------------------------------------- */
 
-.bloc-fill-screen{
-	padding-top:0;
-	position: relative;
-	height: inherit;
+/* Sizes */
+
+.bloc-lg{
+	padding:100px 50px;
 }
-.bloc-fill-screen > .container{
-	position:relative;
-	top:50%;
-	transform:translateY(-50%);
-	-webkit-transform:translateY(-50%);
+
+
+/* Dark theme */
+
+.d-bloc{
+	color:rgba(255,255,255,.7);
 }
-.bloc-fill-screen .fill-bloc-top-edge, .bloc-fill-screen .fill-bloc-bottom-edge{
-	position: absolute;
-	margin: 20px auto;
-	left: 0;
-	right: 0;
-	z-index: 1;
-	transform: none;
+.d-bloc button:hover{
+	color:rgba(255,255,255,.9);
 }
-.bloc-fill-screen .fill-bloc-top-edge{
-	top:0;
+.d-bloc .icon-round,.d-bloc .icon-square,.d-bloc .icon-rounded,.d-bloc .icon-semi-rounded-a,.d-bloc .icon-semi-rounded-b{
+	border-color:rgba(255,255,255,.9);
 }
-.bloc-fill-screen .fill-bloc-bottom-edge{
-	top: initial;
-	bottom: 20px;
+.d-bloc .divider-h span{
+	border-color:rgba(255,255,255,.2);
 }
-.blocs-hero-btn-dwn{
-	width: 58px;
-	height: 58px;
-	display: block;
-	margin:0 auto;
-	line-height: 58px;
-	padding: 0;
-	border-radius: 50%;
-	text-align: center;
-	font-size: 18px;
-	color: rgba(255,255,255,.8);
-	background: rgba(0,0,0,.6);
-	border:0;
+.d-bloc .a-btn,.d-bloc .navbar a,.d-bloc .navbar-brand, .d-bloc a .icon-sm, .d-bloc a .icon-md, .d-bloc a .icon-lg, .d-bloc a .icon-xl, .d-bloc h1 a, .d-bloc h2 a, .d-bloc h3 a, .d-bloc h4 a, .d-bloc h5 a, .d-bloc h6 a, .d-bloc p a{
+	color:rgba(255,255,255,.6);
 }
-.blocs-hero-btn-dwn:hover{
-	color: rgba(255,255,255,1);
+.d-bloc .a-btn:hover,.d-bloc .navbar a:hover,.d-bloc .navbar-brand:hover,.d-bloc a:hover .icon-sm, .d-bloc a:hover .icon-md, .d-bloc a:hover .icon-lg, .d-bloc a:hover .icon-xl, .d-bloc h1 a:hover, .d-bloc h2 a:hover, .d-bloc h3 a:hover, .d-bloc h4 a:hover, .d-bloc h5 a:hover, .d-bloc h6 a:hover, .d-bloc p a:hover{
+	color:rgba(255,255,255,1);
+}
+.d-bloc .navbar-toggle .icon-bar{
+	background:rgba(255,255,255,1);
+}
+.d-bloc .btn-wire,.d-bloc .btn-wire:hover{
+	color:rgba(255,255,255,1);
+	border-color:rgba(255,255,255,1);
+}
+.d-bloc .panel{
+	color:rgba(0,0,0,.5);
+}
+.d-bloc .panel button:hover{
+	color:rgba(0,0,0,.7);
+}
+.d-bloc .panel icon{
+	border-color:rgba(0,0,0,.7);
+}
+.d-bloc .panel .divider-h span{
+	border-color:rgba(0,0,0,.1);
+}
+.d-bloc .panel .a-btn{
+	color:rgba(0,0,0,.6);
+}
+.d-bloc .panel .a-btn:hover{
+	color:rgba(0,0,0,1);
+}
+.d-bloc .panel .btn-wire, .d-bloc .panel .btn-wire:hover{
+	color:rgba(0,0,0,.7);
+	border-color:rgba(0,0,0,.3);
 }
 
 
@@ -245,6 +256,10 @@ nav .caret{
 /* = Bric adjustment margins
 -------------------------------------------------------------- */
 
+.mg-md{
+	margin-top:10px;
+	margin-bottom:20px;
+}
 .mg-lg{
 	margin-top:10px;
 	margin-bottom:40px;
@@ -269,6 +284,21 @@ button{
 	outline: none!important;
 }
 
+.a-btn{
+	padding: 6px 10px 6px 0;
+	line-height: 1.42857143;
+	display:inline-block;
+}
+.text-center .a-btn{
+	padding: 6px 0;
+}
+.a-block{
+	width:100%;
+	text-align:left;
+}
+.text-center .a-block{
+	text-align:center;
+}
 
 
 
@@ -330,12 +360,31 @@ button{
 .blocsapp-device-iphone6.iphone6-silver{
 	background-image:url("img/Apple-iPhone-6s-Silver.png");
 }
+/* = Watch Devices
+-------------------------------------------------------------- */
+
+.blocsapp-device-watch{
+	background-size: 256px 495px;
+	padding-top:148px;
+	display: block;
+	width:256px;
+	height:495px;
+}
+.blocsapp-device-watch img{
+	width: 156px;
+	height: 198px;
+	margin: 0 auto;
+}
+.blocsapp-device-watch.watch-blue{
+	background-image:url("img/Apple-watch-blue.png");
+}
 
 /* = Custom Styling
 -------------------------------------------------------------- */
 
 h1,h2,h3,h4,h5,h6,p,label,.btn,a{
-	font-family:"Helvetica";
+	font-family:"Lato";
+	font-weight:400;
 }
 .container{
 	max-width:1170px;
@@ -368,12 +417,19 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .mount-italy-hero-text-sub-s{
 	font-size:34px;
 }
+.imac-bloc-text-vc{
+	font-size:50px;
+	margin-top:5%;
+}
 
 /* = Colour
 -------------------------------------------------------------- */
 
 /* Background colour styles */
 
+.bgc-olive-drab-7{
+	background-color:#333433;
+}
 .bgc-white{
 	background-color:#ffffff;
 }
