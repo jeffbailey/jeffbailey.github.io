@@ -358,6 +358,9 @@ button{
 .blocsapp-device-iphone6.iphone6-silver{
 	background-image:url("img/Apple-iPhone-6s-Silver.png");
 }
+.blocsapp-device-iphone6.iphone6-space-grey{
+	background-image:url("img/Apple-iPhone-6s-Space-Gray.png");
+}
 /* = Watch Devices
 -------------------------------------------------------------- */
 
@@ -438,6 +441,9 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 
 /* Bloc image backgrounds */
 
+.bg-Run-20--20Edited-20to-20match-20phone-20May-2013-202017-2010-08-31-20AM{
+	background-image:url("img/Run%20-%20Edited%20to%20match%20phone%20May%2013,%202017,%2010.08.31%20AM.png");
+}
 
 
 
