@@ -122,6 +122,12 @@ a:hover{text-decoration: none; cursor:pointer;}
 	border-color:rgba(0,0,0,.3);
 }
 
+/* Row Margin Offsets */
+
+.voffset{
+	margin-top:30px;
+}
+
 /* Bloc text custom styling */
 
 #bloc-0 .navbar-brand{
@@ -273,10 +279,6 @@ nav .caret{
 	margin-top:10px;
 	margin-bottom:20px;
 }
-.mg-lg{
-	margin-top:10px;
-	margin-bottom:40px;
-}
 
 /* = Buttons
 -------------------------------------------------------------- */
@@ -298,6 +300,27 @@ button{
 }
 
 
+/* = Icons
+-------------------------------------------------------------- */
+.icon-md{
+	font-size:30px!important;
+}
+.icon-round{
+	margin:0 auto;
+	border:2px solid transparent;
+	border-radius: 50%;
+	padding: 32px 30px 26px 30px;
+	min-width:80px;
+}
+.icon-round.icon-md,.icon-square.icon-md,.icon-rounded.icon-md{
+	min-width: 92px;
+}
+.icon-round.icon-lg,.icon-square.icon-lg,.icon-rounded.icon-lg{
+	min-width: 122px;
+}
+.icon-round.icon-xl,.icon-square.icon-xl,.icon-rounded.icon-xl{
+	min-width: 162px;
+}
 
 
 
@@ -354,9 +377,6 @@ button{
 	width:100%;
 	height:auto;
 	margin: 0 auto;
-}
-.blocsapp-device-iphone6.iphone6-silver{
-	background-image:url("img/Apple-iPhone-6s-Silver.png");
 }
 .blocsapp-device-iphone6.iphone6-space-grey{
 	background-image:url("img/Apple-iPhone-6s-Space-Gray.png");
@@ -441,9 +461,6 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 
 /* Bloc image backgrounds */
 
-.bg-Run-20--20Edited-20to-20match-20phone-20May-2013-202017-2010-08-31-20AM{
-	background-image:url("img/Run%20-%20Edited%20to%20match%20phone%20May%2013,%202017,%2010.08.31%20AM.png");
-}
 
 
 
@@ -672,6 +689,9 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 @media (max-width: 767px){
 	.hero-text-vc{
 	margin-top:0px;
+}
+.blocs-mob-center-text{
+	text-align:center;
 }
  #bloc-0 .navbar-brand{
 	font-size: 18px;
