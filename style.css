@@ -41,6 +41,75 @@ a:hover{text-decoration: none; cursor:pointer;}
 .bloc-lg{
 	padding:100px 50px;
 }
+.bloc-md{
+	padding:50px;
+}
+
+/* = Full Screen Blocs 
+-------------------------------------------------------------- */
+
+.bloc-fill-screen{
+	padding-top:0;
+	position: relative;
+	height: inherit;
+}
+.bloc-fill-screen > .container{
+	position:relative;
+	top:50%;
+	transform:translateY(-50%);
+	-webkit-transform:translateY(-50%);
+}
+.bloc-fill-screen .fill-bloc-top-edge, .bloc-fill-screen .fill-bloc-bottom-edge{
+	position: absolute;
+	margin: 20px auto;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	transform: none;
+}
+.bloc-fill-screen .fill-bloc-top-edge{
+	top:0;
+}
+.bloc-fill-screen .fill-bloc-bottom-edge{
+	top: initial;
+	bottom: 20px;
+}
+.blocs-hero-btn-dwn{
+	width: 58px;
+	height: 58px;
+	display: block;
+	margin:0 auto;
+	line-height: 58px;
+	padding: 0;
+	border-radius: 50%;
+	text-align: center;
+	font-size: 18px;
+	color: rgba(255,255,255,.8);
+	background: rgba(0,0,0,.6);
+	border:0;
+}
+.blocs-hero-btn-dwn:hover{
+	color: rgba(255,255,255,1);
+}
+
+
+/* Group Styles */
+
+.bloc-group{
+	display:flex;
+}
+.bloc-tile-2{
+	width:50%;
+}
+.bloc-tile-3{
+	width:33.33333333%;
+}
+.bloc-tile-4{
+	width:25%;
+}
+.bloc-tile-2 .container, .bloc-tile-3 .container, .bloc-tile-4 .container{
+	width:100%;
+}
 
 
 /* Dark theme */
@@ -299,6 +368,21 @@ button{
 	outline: none!important;
 }
 
+.a-btn{
+	padding: 6px 10px 6px 0;
+	line-height: 1.42857143;
+	display:inline-block;
+}
+.text-center .a-btn{
+	padding: 6px 0;
+}
+.a-block{
+	width:100%;
+	text-align:left;
+}
+.text-center .a-block{
+	text-align:center;
+}
 
 /* = Icons
 -------------------------------------------------------------- */
@@ -378,8 +462,8 @@ button{
 	height:auto;
 	margin: 0 auto;
 }
-.blocsapp-device-iphone6.iphone6-space-grey{
-	background-image:url("img/Apple-iPhone-6s-Space-Gray.png");
+.blocsapp-device-iphone6.iphone6-silver{
+	background-image:url("img/Apple-iPhone-6s-Silver.png");
 }
 /* = Watch Devices
 -------------------------------------------------------------- */
@@ -457,6 +541,9 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 .bgc-white{
 	background-color:#FEFFFF;
+}
+.bgc-outer-space{
+	background-color:#47454B;
 }
 
 /* Bloc image backgrounds */
@@ -691,6 +778,9 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	margin-top:0px;
 }
 .blocs-mob-center-text{
+	text-align:center;
+}
+.bloc-mob-center-text{
 	text-align:center;
 }
  #bloc-0 .navbar-brand{
