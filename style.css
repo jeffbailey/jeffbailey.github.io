@@ -44,6 +44,9 @@ a:hover{text-decoration: none; cursor:pointer;}
 .bloc-md{
 	padding:50px;
 }
+.bloc-sm{
+	padding:20px 50px;
+}
 
 /* = Full Screen Blocs 
 -------------------------------------------------------------- */
@@ -344,9 +347,17 @@ nav .caret{
 /* = Bric adjustment margins
 -------------------------------------------------------------- */
 
+.mg-sm{
+	margin-top:10px;
+	margin-bottom:5px;
+}
 .mg-md{
 	margin-top:10px;
 	margin-bottom:20px;
+}
+.mg-lg{
+	margin-top:10px;
+	margin-bottom:40px;
 }
 
 /* = Buttons
@@ -368,6 +379,10 @@ button{
 	outline: none!important;
 }
 
+.btn-xl{
+	padding: 16px 40px;
+	font-size: 28px;
+}
 .a-btn{
 	padding: 6px 10px 6px 0;
 	line-height: 1.42857143;
@@ -424,6 +439,11 @@ button{
 
 
 
+/* iFrame */
+
+iframe{
+	border:0;
+}
 
 
 /* ScrollToTop button */
@@ -483,6 +503,88 @@ button{
 .blocsapp-device-watch.watch-white{
 	background-image:url("img/Apple-watch-white.png");
 }
+/* = Lightbox
+-------------------------------------------------------------- */
+
+a[data-lightbox]{
+	position: relative;
+	display: block;
+	text-align: center;
+}
+a[data-lightbox]:hover::before{
+	content:"+";
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
+	font-size:32px;
+	width:50px;
+	height:50px;
+	margin-left:-25px;
+	border-radius: 50%;
+	background:rgba(0,0,0,.6);
+	color:#FFF;
+	font-weight:100;
+	z-index: 1;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+}
+a[data-lightbox]:hover img{
+	opacity: 0.6;
+	-webkit-animation-fill-mode: none;
+	animation-fill-mode:none;
+}
+#lightbox-modal{
+	display: flex;
+	align-items: center;
+}
+#lightbox-modal .modal-dialog{
+	width:90%;
+	max-width:900px;
+	margin:0 auto 0;
+}
+#lightbox-modal .modal-dialog img{
+	max-height:90vh;
+	margin: 0 auto;
+}
+.lightbox-caption{
+	padding: 20px;
+	color: #FFF;
+	background: rgba(0,0,0,.5);
+	position: absolute;
+	left: 15px;
+	right: 15px;
+	bottom: 5px;
+}
+.close-lightbox{
+	display: none;
+	font-size: 40px;
+	position: absolute;
+	top:8px;
+	right:20px;
+	z-index: 20;
+}
+.next-lightbox, .prev-lightbox{
+	font-size:20px;
+	color:rgba(255,255,255,.4);
+	transition: all .2s ease-in-out;
+	position: absolute;
+	top:50%;
+	z-index:1;
+}
+.next-lightbox{
+	right:25px;
+}
+.prev-lightbox{
+	left:25px;
+}
+.prev-lightbox:hover, .next-lightbox:hover{
+	color:rgba(255,255,255,.9);
+}
+
+/* Hide Object */
+.object-hidden{
+	display:none;
+}
 
 /* = Custom Styling
 -------------------------------------------------------------- */
@@ -530,17 +632,23 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	font-size:50px;
 	margin-top:50%;
 }
+.blocs-mobile-signup-text{
+	font-size:33px;
+}
 
 /* = Colour
 -------------------------------------------------------------- */
 
 /* Background colour styles */
 
-.bgc-olive-drab-7{
-	background-color:#333433;
-}
 .bgc-white{
 	background-color:#FEFFFF;
+}
+.bgc-black{
+	background-color:#000000;
+}
+.bgc-olive-drab-7{
+	background-color:#333433;
 }
 .bgc-outer-space{
 	background-color:#47454B;
@@ -781,6 +889,9 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	text-align:center;
 }
 .bloc-mob-center-text{
+	text-align:center;
+}
+.blocs-mobile-signup-text{
 	text-align:center;
 }
  #bloc-0 .navbar-brand{
