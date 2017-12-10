@@ -44,9 +44,6 @@ a:hover{text-decoration: none; cursor:pointer;}
 .bloc-md{
 	padding:50px;
 }
-.bloc-sm{
-	padding:20px 50px;
-}
 
 /* = Full Screen Blocs 
 -------------------------------------------------------------- */
@@ -206,19 +203,19 @@ a:hover{text-decoration: none; cursor:pointer;}
 	font-size: 28px;
 }
 #bloc-3 p{
-	font-size: 20px;
+	font-size: 18px;
 }
 #bloc-4 p{
-	font-size: 20px;
+	font-size: 18px;
 }
 #bloc-5 p{
-	font-size: 20px;
+	font-size: 18px;
 }
 #bloc-6 p{
-	font-size: 20px;
+	font-size: 18px;
 }
 #bloc-7 p{
-	font-size: 20px;
+	font-size: 18px;
 }
 
 /* = NavBar
@@ -370,6 +367,18 @@ nav .caret{
 	margin-top:10px;
 	margin-bottom:40px;
 }
+img.mg-sm,img.mg-md,img.mg-lg{
+	margin-top: 0;
+}
+img.mg-sm{
+	margin-bottom:10px;
+}
+img.mg-md{
+	margin-bottom:30px;
+}
+img.mg-lg{
+	margin-bottom:50px;
+}
 
 /* = Buttons
 -------------------------------------------------------------- */
@@ -470,44 +479,6 @@ button{
 .showScrollTop{
 	font-size: 14px;
 	opacity: 1;
-}
-/* = iPhone 6 Devices
--------------------------------------------------------------- */
-
-.blocsapp-device-iphone6{
-	background-repeat:no-repeat;
-	background-size:contain;
-	background-position:center;
-	display: block;
-	width:100%;
-	height:auto;
-	padding: 18%;
-}
-.blocsapp-device-iphone6 img{
-	width:100%;
-	height:auto;
-	margin: 0 auto;
-}
-.blocsapp-device-iphone6.iphone6-silver{
-	background-image:url("img/Apple-iPhone-6s-Silver.png");
-}
-/* = Watch Devices
--------------------------------------------------------------- */
-
-.blocsapp-device-watch{
-	background-size: 256px 495px;
-	padding-top:148px;
-	display: block;
-	width:256px;
-	height:495px;
-}
-.blocsapp-device-watch img{
-	width: 156px;
-	height: 198px;
-	margin: 0 auto;
-}
-.blocsapp-device-watch.watch-white{
-	background-image:url("img/Apple-watch-white.png");
 }
 
 /* Hide Object */
